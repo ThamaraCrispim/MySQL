@@ -1,0 +1,18 @@
+## 1. Introdução ao SQL
+
+### História do SQL
+
+O SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. Sua origem remonta à década de 1970, quando os pesquisadores Donald D. Chamberlin e Raymond F. Boyce, da IBM, desenvolveram uma linguagem chamada SEQUEL (Structured English Query Language) no laboratório de pesquisa da empresa em San José, Califórnia. SEQUEL foi projetada para interagir com o sistema de banco de dados relacional System R da IBM, um dos primeiros de seu tipo.
+
+Em 1979, a Oracle Corporation (então conhecida como Relational Software Inc.) lançou o primeiro produto comercial de banco de dados que utilizava SQL, marcando o início da popularização da linguagem. Em 1986, o American National Standards Institute (ANSI) padronizou o SQL, e um ano depois, a Organização Internacional de Normalização (ISO) também adotou a linguagem como padrão.
+
+### Utilidade do SQL
+
+O SQL se tornou a linguagem padrão para a manipulação de dados em bancos de dados relacionais devido à sua simplicidade e poder expressivo. Ele permite que os usuários executem uma ampla variedade de operações, como:
+
+1. **Criação e modificação de estruturas de banco de dados**: SQL permite criar novas tabelas, alterar a estrutura de tabelas existentes e definir relações entre tabelas.
+2. **Inserção, atualização e exclusão de dados**: Com comandos como `INSERT`, `UPDATE` e `DELETE`, os usuários podem gerenciar os dados armazenados nas tabelas.
+3. **Consultas e recuperação de dados**: Através do comando `SELECT`, é possível recuperar dados específicos de uma ou várias tabelas, aplicando filtros, ordenações e agregações.
+4. **Controle de acesso e segurança**: SQL permite a definição de permissões e roles, garantindo que apenas usuários autorizados possam acessar ou modificar determinados dados.
+
+A utilidade do SQL é amplamente reconhecida em diversas áreas, como administração de empresas, análise de dados, desenvolvimento de software, e-commerce, saúde, entre outras. Sua capacidade de manipular grandes volumes de dados de forma eficiente e segura faz do SQL uma ferramenta essencial para organizações que dependem de informações precisas e acessíveis para suas operações diárias.
