@@ -1,1 +1,16 @@
+-- Criar banco de dados
+CREATE DATABASE cadastro;
+
+-- Usar o banco de dados criado
+USE cadastro;
+
+-- Criar tabela
+CREATE TABLE pessoas (
+    Nome VARCHAR(30),
+    Idade TINYINT,
+    Sexo CHAR(1),
+    Peso FLOAT,
+    Altura FLOAT,
+    Nacionalidade VARCHAR(20)
+);
 
