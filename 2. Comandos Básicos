@@ -1,3 +1,12 @@
+# Script de Banco de Dados
+
+Este repositório contém um script SQL para criar e gerenciar um banco de dados simples. O script inclui a criação de um banco de dados e uma tabela, e a modificação da estrutura da tabela usando constraints e tipos de dados mais apropriados.
+
+## 1. Estrutura Inicial
+
+O código a seguir cria um banco de dados chamado `cadastro` e uma tabela chamada `pessoas` com a estrutura básica:
+
+```sql
 -- Criar banco de dados
 CREATE DATABASE cadastro;
 
@@ -13,4 +22,25 @@ CREATE TABLE pessoas (
     Altura FLOAT,
     Nacionalidade VARCHAR(20)
 );
+-- Melhorar a Estrutura
+-- Excluir o banco de dados existente (caso precise remover o banco anterior)
+-- DROP DATABASE cadastro;
+
+-- Criar um novo banco de dados com charset e collation
+CREATE DATABASE cadastro CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+-- Usar o banco de dados criado
+USE cadastro;
+
+-- Criar tabela com melhorias
+CREATE TABLE pessoas (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(30) NOT NULL,
+    nascimento DATE,
+    sexo ENUM('M', 'F'),
+    peso DECIMAL(5,2),
+    altura DECIMAL(5,2),
+    nacionalidade VARCHAR(20) DEFAULT 'brasil',
+    PRIMARY KEY (id)
+) CHARACTER SET = utf8mb4;
 
