@@ -1,1 +1,60 @@
 Inserindo Dados na Tabela (INSERT INTO)
+
+-- Inserindo dados na tabela 'pessoas'
+
+-- Adicionando a pessoa 'Gobofredo'
+INSERT INTO pessoas 
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+VALUES
+('Gobofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
+
+-- Selecionando todos os dados da tabela 'pessoas'
+SELECT * FROM pessoas;
+
+-- Adicionando a pessoa 'Gisele'
+INSERT INTO pessoas 
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+VALUES
+('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal');
+
+-- Selecionando todos os dados da tabela 'pessoas'
+SELECT * FROM pessoas;
+
+Explicação do Código
+Este código SQL realiza duas operações principais: inserção de dados na tabela pessoas e seleção de todos os dados da tabela pessoas.
+
+Inserção de Dados
+
+O comando INSERT INTO é usado para adicionar novas linhas a uma tabela. Aqui, estamos adicionando duas novas pessoas à tabela pessoas:
+
+INSERT INTO pessoas 
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+VALUES
+('Gobofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
+Este comando insere uma pessoa com os seguintes dados:
+
+Nome: Gobofredo
+Data de Nascimento: 02 de janeiro de 1984
+Sexo: Masculino (M)
+Peso: 78.5 kg
+Altura: 1.83 m
+Nacionalidade: Brasil
+O segundo comando insere outra pessoa:
+
+INSERT INTO pessoas 
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+VALUES
+('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal');
+Nome: Gisele
+Data de Nascimento: 30 de dezembro de 1984
+Sexo: Feminino (F)
+Peso: 55.5 kg
+Altura: 1.60 m
+Nacionalidade: Portugal
+Seleção de Dados
+
+O comando SELECT * FROM é usado para selecionar e exibir todos os dados de uma tabela:
+
+SELECT * FROM pessoas;
+
+Esse comando retorna todas as colunas de todas as linhas da tabela pessoas.
