@@ -1,36 +1,17 @@
-Inserindo Dados na Tabela (INSERT INTO)
+# Inserindo Dados na Tabela (INSERT INTO)
 
--- Inserindo dados na tabela 'pessoas'
+## Inserção de Dados na Tabela `pessoas`
 
--- Adicionando a pessoa 'Gobofredo'
+Este código SQL realiza duas operações principais: inserção de dados na tabela `pessoas` e seleção de todos os dados da tabela `pessoas`.
+
+### Adicionando a Pessoa 'Gobofredo'
+
+```sql
 INSERT INTO pessoas 
 (nome, nascimento, sexo, peso, altura, nacionalidade)
 VALUES
 ('Gobofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
 
--- Selecionando todos os dados da tabela 'pessoas'
-SELECT * FROM pessoas;
-
--- Adicionando a pessoa 'Gisele'
-INSERT INTO pessoas 
-(nome, nascimento, sexo, peso, altura, nacionalidade)
-VALUES
-('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal');
-
--- Selecionando todos os dados da tabela 'pessoas'
-SELECT * FROM pessoas;
-
-Explicação do Código
-Este código SQL realiza duas operações principais: inserção de dados na tabela pessoas e seleção de todos os dados da tabela pessoas.
-
-Inserção de Dados
-
-O comando INSERT INTO é usado para adicionar novas linhas a uma tabela. Aqui, estamos adicionando duas novas pessoas à tabela pessoas:
-
-INSERT INTO pessoas 
-(nome, nascimento, sexo, peso, altura, nacionalidade)
-VALUES
-('Gobofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
 Este comando insere uma pessoa com os seguintes dados:
 
 Nome: Gobofredo
@@ -39,22 +20,64 @@ Sexo: Masculino (M)
 Peso: 78.5 kg
 Altura: 1.83 m
 Nacionalidade: Brasil
-O segundo comando insere outra pessoa:
+Seleção de Todos os Dados
+
+
+SELECT * FROM pessoas;
+
+Este comando retorna todas as colunas de todas as linhas da tabela pessoas.
+
+Adicionando a Pessoa 'Gisele'
+
 
 INSERT INTO pessoas 
 (nome, nascimento, sexo, peso, altura, nacionalidade)
 VALUES
 ('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal');
+Este comando insere outra pessoa com os seguintes dados:
+
 Nome: Gisele
 Data de Nascimento: 30 de dezembro de 1984
 Sexo: Feminino (F)
 Peso: 55.5 kg
 Altura: 1.60 m
 Nacionalidade: Portugal
-Seleção de Dados
 
-O comando SELECT * FROM é usado para selecionar e exibir todos os dados de uma tabela:
+Seleção de Todos os Dados
+
+SELECT * FROM pessoas;
+Este comando retorna todas as colunas de todas as linhas da tabela pessoas.
+
+Inserção de Dados Simplificada
+Quando o comando INSERT INTO é utilizado sem especificar as colunas, o MySQL assume que os valores fornecidos correspondem exatamente à ordem das colunas na tabela. Por exemplo:
+
+
+INSERT INTO pessoas 
+VALUES
+('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal');
+Inserção de Múltiplas Linhas
+
+
+-- Inserindo múltiplas linhas na tabela 'pessoas'
+INSERT INTO pessoas 
+VALUES
+('Gisele', '1984-12-30', 'F', '55.5', '1.60', 'Portugal'),
+('Gobofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
+
+-- Selecionando todos os dados da tabela 'pessoas'
 
 SELECT * FROM pessoas;
 
-Esse comando retorna todas as colunas de todas as linhas da tabela pessoas.
+Explicação
+Comando INSERT INTO: Adiciona múltiplas linhas de uma vez.
+Valores: Cada conjunto de valores entre parênteses representa uma linha a ser inserida.
+Separação: Os conjuntos de valores são separados por vírgulas.
+Classificação dos Comandos como DML
+Os comandos SQL fornecidos são exemplos de DML (Data Manipulation Language). DML é uma subcategoria da linguagem SQL utilizada para manipular dados dentro das tabelas de um banco de dados. Os principais comandos DML incluem:
+
+INSERT INTO: Utilizado para adicionar novos dados às tabelas.
+UPDATE: Modifica dados já existentes nas tabelas.
+DELETE: Remove dados das tabelas.
+SELECT: Consulta e recupera dados das tabelas.
+
+
