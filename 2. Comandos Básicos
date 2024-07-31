@@ -80,4 +80,4 @@ UPDATE: Modifica dados já existentes nas tabelas.
 DELETE: Remove dados das tabelas.
 SELECT: Consulta e recupera dados das tabelas.
 
-
+# Alterando a Estrutura da Tabela (ALTER TABLE e DROP TABLE)
