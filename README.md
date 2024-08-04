@@ -21,4 +21,4 @@ Repositório para acompanhar o [curso de SQL](https://www.youtube.com/watch?v=Of
 
 ## Como Usar
 
-Este repositório contém os scripts e exemplos usados no curso. Sinta-se à vontade para fazer o fork e enviar pull requests com melhorias ou correções.
+Este repositório contém os scripts e exemplos usados no curso. Sinta-se à vontade para fazer o fork e enviar pull requests com melhorias ou correções
