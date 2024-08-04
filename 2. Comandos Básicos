@@ -81,3 +81,36 @@ DELETE: Remove dados das tabelas.
 SELECT: Consulta e recupera dados das tabelas.
 
 # Alterando a Estrutura da Tabela (ALTER TABLE e DROP TABLE)
+
+### Conteúdo do `alter_table_commands.sql`
+
+```sql
+USE cadastro;
+DESC pessoas;
+
+-- Adicionar uma coluna
+ALTER TABLE pessoas
+ADD COLUMN `profissão` VARCHAR(255);
+
+-- Selecionar todas as colunas da tabela
+SELECT * FROM pessoas;
+
+-- Eliminar uma coluna
+ALTER TABLE pessoas
+DROP COLUMN profissão;
+
+-- Adicionar tabela de novo, porém em outra posição
+ALTER TABLE pessoas
+ADD COLUMN profissão VARCHAR(10) AFTER nome;
+
+-- Colocar coluna em primeiro lugar
+ALTER TABLE pessoas
+ADD COLUMN codigo INT FIRST;
+
+-- Mudar o tamanho do espaço
+ALTER TABLE pessoas
+MODIFY COLUMN profissão VARCHAR(20);
+
+-- Mudar o nome de uma coluna
+ALTER TABLE pessoas
+CHANGE COLUMN profissão prof VARCHAR(20);
