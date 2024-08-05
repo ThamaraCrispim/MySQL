@@ -111,6 +111,15 @@ ADD COLUMN codigo INT FIRST;
 ALTER TABLE pessoas
 MODIFY COLUMN profissão VARCHAR(20);
 
+#criar um nova tabela:
+CREATE TABLE IF NOT EXISTS cursos (
+    nome VARCHAR(30) NOT NULL UNIQUE,
+    descricao TEXT,
+    carga INT UNSIGNED,
+    totaulas INT,
+    ano YEAR DEFAULT '2024'
+) DEFAULT CHARSET = utf8;
+
 -- Mudar o nome de uma coluna
 ALTER TABLE pessoas
 CHANGE COLUMN profissão prof VARCHAR(20);
