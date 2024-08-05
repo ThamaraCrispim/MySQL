@@ -120,6 +120,36 @@ CREATE TABLE IF NOT EXISTS cursos (
     ano YEAR DEFAULT '2024'
 ) DEFAULT CHARSET = utf8;
 
+-- Adiciona uma nova coluna 'idcursos' do tipo int como a primeira coluna da tabela 'cursos'
+ALTER TABLE cursos 
+ADD COLUMN idcursos INT FIRST;
+
+-- Exibe os detalhes da estrutura da tabela 'cursos'
+DESC cursos;
+
+-- Define a coluna 'idcursos' como chave primária da tabela 'cursos'
+ALTER TABLE cursos
+ADD PRIMARY KEY(idcursos);
+
+-- Cria uma nova tabela chamada 'teste' se ela não existir
+CREATE TABLE IF NOT EXISTS teste(
+    id INT,
+    nome VARCHAR(10),
+    idade INT
+);
+
+-- Insere dados na tabela 'teste'
+INSERT INTO teste VALUES
+('1', 'Pedro', '22'),
+('2', 'Gabi', '22');
+
+-- Seleciona e exibe todos os registros da tabela 'teste'
+SELECT * FROM teste;
+
+-- Exclui a tabela 'teste' se ela existir
+DROP TABLE IF EXISTS teste;
+
+
 -- Mudar o nome de uma coluna
 ALTER TABLE pessoas
 CHANGE COLUMN profissão prof VARCHAR(20);
